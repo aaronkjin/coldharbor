@@ -2,6 +2,8 @@
 
 The MDR interface from Severance. Built by an innie (save me!).
 
+Currently building 👷‍♂️
+
 ## Getting Started
 
 ```bash
