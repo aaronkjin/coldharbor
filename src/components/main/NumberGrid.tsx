@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { NumberCell } from "./NumberCell";
 
 interface HoveredCell {
@@ -53,9 +53,10 @@ export const NumberGrid = () => {
   const [grid, setGrid] = useState<string[][]>([]);
   const [hoveredCell, setHoveredCell] = useState<HoveredCell | null>(null);
 
-  useState(() => {
+  // Generate grid on client-side only
+  useEffect(() => {
     setGrid(generateGridData());
-  });
+  }, []);
 
   const getProximity = (row: number, col: number) => {
     if (!hoveredCell) return 0;

@@ -8,7 +8,7 @@ export default function Main() {
   return (
     <div className="flex flex-col h-screen bg-lumon-bg text-lumon-text overflow-hidden">
       <Header />
-      <div className="flex-grow flex items-center justify-center">
+      <div className="flex-grow flex items-center justify-center p-4">
         <NumberGrid />
       </div>
       <Footer />
